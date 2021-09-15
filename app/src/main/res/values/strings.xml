@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">elective2</string>
+    <string name="back"><![CDATA[<< Back]]></string>
+    <string name="fullName">Gerard Ian G. Consolacion</string>
+    <string name="courseButton">IT Elective 2</string>
+    <string name="course">Bacehlor in Information Technology</string>
+    <string name="email">gigconsolacion@addu.edu.ph</string>
+    <string name="fullname">Gerard Ian G. Consolacion</string>
+    <string name="twitterDescription">twitter link</string>
+    <string name="fbDescription">FB link</string>
+    <string name="linkedInDescription">linkedIn link</string>
+    <string name="githubDescription">github link</string>
+</resources>

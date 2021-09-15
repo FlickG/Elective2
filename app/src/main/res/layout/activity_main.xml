@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Fullname"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstnameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:background="@drawable/edittext_border"
+        android:gravity="center_horizontal"
+        android:hint="Firstname"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/lastnameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:background="@drawable/edittext_border"
+        android:gravity="center_horizontal"
+        android:hint="Lastname"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/firstnameEditText"
+        app:layout_constraintStart_toStartOf="@+id/firstnameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/firstnameEditText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Home Address"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastnameEditText" />
+
+    <EditText
+        android:id="@+id/houseNoEditText"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@drawable/edittext_border"
+        android:gravity="center_horizontal"
+        android:hint="House #"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/streetnameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@drawable/edittext_border"
+        android:gravity="center_horizontal"
+        android:hint="Street name"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/lastnameEditText"
+        app:layout_constraintStart_toEndOf="@+id/houseNoEditText"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/subdivisionEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:background="@drawable/edittext_border"
+        android:gravity="center_horizontal"
+    android:hint="Subdivision / Housing Name"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/streetnameEditText"
+        app:layout_constraintStart_toStartOf="@+id/houseNoEditText"
+        app:layout_constraintTop_toBottomOf="@+id/streetnameEditText" />
+
+    <EditText
+        android:id="@+id/cityEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:background="@drawable/edittext_border"
+        android:gravity="center_horizontal"
+        android:hint="City Name"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/subdivisionEditText"
+        app:layout_constraintStart_toStartOf="@+id/subdivisionEditText"
+        app:layout_constraintTop_toBottomOf="@+id/subdivisionEditText" />
+
+    <EditText
+        android:id="@+id/countryEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:background="@drawable/edittext_border"
+        android:gravity="center_horizontal"
+        android:hint="Country Name"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/cityEditText"
+        app:layout_constraintStart_toStartOf="@+id/cityEditText"
+        app:layout_constraintTop_toBottomOf="@+id/cityEditText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Notes"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/countryEditText"
+        app:layout_constraintTop_toBottomOf="@+id/countryEditText" />
+
+    <EditText
+        android:id="@+id/notesEditText"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:background="@drawable/edittext_border"
+        android:gravity="start"
+        android:hint="Comments / Notes"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/countryEditText"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="140dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:text="Save"
+        android:onClick="saveInput"
+        android:textStyle="bold"
+        android:textColor="@color/darkGreen"
+        android:backgroundTint="@color/green"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/notesEditText"
+        app:layout_constraintTop_toBottomOf="@+id/notesEditText" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="115dp"
+        android:layout_height="61dp"
+        android:onClick="clearInput"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/silver"
+        android:text="@string/back"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnSave"
+        app:layout_constraintTop_toBottomOf="@+id/notesEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
