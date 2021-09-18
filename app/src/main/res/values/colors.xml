@@ -10,4 +10,28 @@
     <color name="green">#7FF484</color>
     <color name="darkGreen">#013304</color>
     <color name="silver">#AFBAAF</color>
+    <!-- Colors for the background -->
+    <color name="blackStart">#060607</color>
+    <color name="blueBlack">#111f28</color>
+    <color name="greyEnd">#484e52</color>
+
+    <!-- Colors to add a little pop to the buttons -->
+    <color name="greyAccent">#afb9c5</color>
+    <color name="tanAccent">#e3cdb3</color>
+
+    <!-- Clear Button Colors -->
+    <color name="redBackground">#5a020b</color>
+    <color name="redAccent">#ff0000</color>
+
+    <!-- Equals Button Colors -->
+    <color name="greenBackground">#013300</color>
+    <color name="greenAccent">#2ffd64</color>
+
+    <!-- Equals Button Colors -->
+    <color name="yellowBackground">#887C0A</color>
+    <color name="yellowAccent">#FFE60B</color>
+
+    <!-- Math Operator Button Colors -->
+    <color name="purpleBackground">#1B2A81</color>
+    <color name="purpleAccent">#008EFF</color>
 </resources>
